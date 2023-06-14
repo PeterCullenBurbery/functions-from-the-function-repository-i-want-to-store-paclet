@@ -1,27 +1,31 @@
 (* ::Package:: *)
 
 (* ::Section:: *)
-
 (*Package Header*)
+
 
 BeginPackage["PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`"
     ];
 
-(* ::Text:: *)
 
+
+(* ::Text:: *)
 (*Declare your public symbols here:*)
+
 
 PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`ExifAltitude;
 
 Begin["`Private`"];
 
-(* ::Section:: *)
 
+
+(* ::Section:: *)
 (*Definitions*)
 
-(* ::Text:: *)
 
+(* ::Text:: *)
 (*Define your public and private symbols here:*)
+
 
 ExifAltitude // ClearAll
 
@@ -38,13 +42,15 @@ ExifAltitude[image_ ? (Function[{input}, ImageQ[input], {}]) /; !MissingQ[
 ExifAltitude[args___] :=
     Null /; CheckArguments[ExifAltitude[args], 1];
 
-(* ::Section:: *)
 
+
+(* ::Section:: *)
 (*Package Footer*)
+
 
 (* ::Section::Closed:: *)
-
 (*Package Footer*)
+
 
 End[];
 

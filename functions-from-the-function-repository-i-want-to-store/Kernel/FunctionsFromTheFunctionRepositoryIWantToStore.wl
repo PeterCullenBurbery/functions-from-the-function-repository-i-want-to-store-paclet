@@ -1,13 +1,35 @@
 (* ::Package:: *)
 
-<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`ExifAltitude;
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`ExifAltitude`;
+
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`FileNameEdit`;
+
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`FileNameWithDate`;
+
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`FromCamelCase`;
+
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`HighlightText`;
+
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`HighlightTextDifferences`;
+
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`ExpressionLineDiff`;
+
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`RandomString`;
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`ReadableForm`;
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`SlugifyString`;
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`StringAppend`;
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`StringContainsAll`;
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`StringDisjointQ`;
+<<PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`StringFunction`;
 
 
 (* ::Section:: *)
 (*Package Header*)
 
 
-BeginPackage["PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`"];
+BeginPackage["PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`"
+    ];
+
 
 
 (* ::Text:: *)
@@ -16,8 +38,8 @@ BeginPackage["PeterBurbery`FunctionsFromTheFunctionRepositoryIWantToStore`"];
 
 SayHello;
 
-
 Begin["`Private`"];
+
 
 
 (* ::Section:: *)
@@ -28,7 +50,9 @@ Begin["`Private`"];
 (*Define your public and private symbols here:*)
 
 
-SayHello[name_? StringQ] := "Hello " <> name <> "!";
+SayHello[name_?StringQ] :=
+    "Hello " <> name <> "!";
+
 
 
 (* ::Section::Closed:: *)
@@ -36,4 +60,5 @@ SayHello[name_? StringQ] := "Hello " <> name <> "!";
 
 
 End[];
+
 EndPackage[];
